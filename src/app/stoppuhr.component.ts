@@ -21,6 +21,11 @@ export class StoppUhrComponent {
 
     runflag = true;
 
+    Timearray.clear();
+    time_min = 0;
+    time_ms = 0;
+    time_s = 0;
+
     var TIME_INTERRUPT = setInterval( a -> function(a){
 
       time_ms += 10;
