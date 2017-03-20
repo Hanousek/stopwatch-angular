@@ -1,0 +1,8 @@
+<input type="text" title="Time">{{timestop.displaytime}}</input>
+<button id="timeTrigger" (click)="timestop.start()" *ngIf="timestop.runflag === false">Start</button>
+<button id="timeTriggerSec" (click)="timestop.stop()" *ngIf="timestop.runflag === true">Stop</button>
+
+
+<input type="text" title="TimeLaps"><p *ngFor="let str of Timearray">{{str}}</p></input>
+
+<button id="lapTrigger" (click)="timestop.grablap()">Lap</button>
